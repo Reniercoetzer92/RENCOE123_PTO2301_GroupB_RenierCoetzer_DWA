@@ -140,3 +140,113 @@ function addNumbers(a, b) {
   // Test the function
   const result = addNumbers(5, 10);
   console.log(result); // Output: 15
+
+# Gherkin is a line-oriented language that uses indentation to define structure.Either spaces or tabs may be used for indentation. One line should be treated as one step and mostly it starts with a keyword . #
+
+# a line that starts with a hash sign (#) is treated as comment
+
+# Gherkin Syntax
+## Feature:
+### Scenario: 
+      Given:
+      when:
+      and:
+      Then:
+
+## Feature: Tally count App - Increment Count with "+"
+
+Scenario: User increments the tally count using the "+" button
+    Given the user is on the main screen of the Tally App
+    When the user selects a tally to update
+    And the user taps the "+" button
+    Then the tally count should increase by 1
+
+## Feature: Tally count App - Rapidly Increment Count with "+"
+
+Scenario: User rapidly increments the tally count using the "+" button
+    Given the user is on the main screen of the Tally App
+    When the user selects a tally to update
+    And the user holds down the "+" button for 2 seconds
+    Then the tally count should increase rapidly at a consistent rate
+
+## Feature: Tally count App - Customizable Increment Value with "+"
+
+Scenario: User increments the tally count with a custom value using the "+" button
+    Given the user is on the main screen of the Tally App
+    And the user has selected a tally with a custom increment value of 5
+    When the user taps the "+" button
+    Then the tally count should increase by 5
+
+## Feature: Tally count App - Undo Last Increment with "+"
+
+Scenario: User undoes the last increment using the "+" button
+    Given the user is on the main screen of the Tally App
+    When the user selects a tally to update
+    And the user taps the "+" button twice
+    And the user taps the "Undo" button
+    Then the tally count should revert to the previous value
+
+## Feature: Tally count App - Increment Multiple Tallies with "+"
+
+Scenario: User increments multiple tallies using the "+" button
+    Given the user is on the main screen of the Tally App
+    When the user selects multiple tallies
+    And the user taps the "+" button
+    Then the count of all selected tallies should increase by 1
+
+## Feature: Tally count App - Visual Feedback for "+"
+
+Scenario: User receives visual feedback when using the "+" button
+    Given the user is on the main screen of the Tally App
+    When the user selects a tally to update
+    And the user taps the "+" button
+    Then a visual indicator, such as a brief animation or color change, should appear to confirm the button press
+
+### Feature: Tally App - Decrement Count with "-"
+
+Scenario: User decrements the tally count using the "-" button
+    Given the user is on the main screen of the Tally App
+    When the user selects a tally to update
+    And the user taps the "-" button
+    Then the tally count should decrease by 1
+
+### Feature: Tally App - Rapidly Decrement Count with "-"
+
+Scenario: User rapidly decrements the tally count using the "-" button
+    Given the user is on the main screen of the Tally App
+    When the user selects a tally to update
+    And the user holds down the "-" button for 2 seconds
+    Then the tally count should decrease rapidly at a consistent rate
+
+### Feature: Tally App - Customizable Decrement Value with "-"
+
+Scenario: User decrements the tally count with a custom value using the "-" button
+    Given the user is on the main screen of the Tally App
+    And the user has selected a tally with a custom decrement value of 5
+    When the user taps the "-" button
+    Then the tally count should decrease by 5
+
+### Feature: Tally App - Undo Last Decrement with "-"
+
+Scenario: User undoes the last decrement using the "-" button
+    Given the user is on the main screen of the Tally App
+    When the user selects a tally to update
+    And the user taps the "-" button twice
+    And the user taps the "Undo" button
+    Then the tally count should revert to the previous value
+
+### Feature: Tally App - Decrement Multiple Tallies with "-"
+
+Scenario: User decrements multiple tallies using the "-" button
+    Given the user is on the main screen of the Tally App
+    When the user selects multiple tallies
+    And the user taps the "-" button
+    Then the count of all selected tallies should decrease by 1
+
+### Feature: Tally App - Visual Feedback for "-"
+
+Scenario: User receives visual feedback when using the "-" button
+    Given the user is on the main screen of the Tally App
+    When the user selects a tally to update
+    And the user taps the "-" button
+    Then a visual indicator, such as a brief animation or color change, should appear to confirm the button press
