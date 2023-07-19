@@ -1,0 +1,84 @@
+# users story:
+
+A user story is a concise, informal description of a feature or 
+functionality from the perspective of an end user. It is commonly used in Agile software development 
+methodologies to capture the needs and requirements of the users in a 
+format that is easily understood by the development team.
+
+A typical user story follows a simple template, often referred to as 
+the "As a [user role], 
+I want [goal/desire], so that 
+[benefit/value]." Let's break down each component:
+
+1.  "As a [user role]": This part identifies the specific user or stakeholder 
+    who will benefit from or interact with the feature. 
+    It helps to define the context and frame the story from a user's perspective. 
+    For example, "As a registered user," or "As an administrator."
+
+2.  "I want [goal/desire]": This section describes what the user wants to accomplish 
+    or the specific functionality they desire. 
+    It should focus on the user's intent or the problem they are trying to solve. 
+    For example, "I want to search for products based on specific criteria," or "
+    I want to be able to delete comments on a post."
+
+3.  "So that [benefit/value]": This part explains the reason or the value that the user expects to 
+    achieve by fulfilling their goal. It provides context and helps prioritize features based 
+    on their perceived benefits. For example, "So that I can find the items I'm looking for more 
+    easily," or "So that I can maintain a clean and organized discussion board."
+
+User stories are intentionally brief and written in a user-centric language to encourage 
+conversation and collaboration between the development team and stakeholders. 
+They serve as placeholders for detailed discussions and serve as a basis for determining 
+the scope and prioritization of work during the development process.
+
+#Markdown:
+
+Markdown is a lightweight markup language that allows you to format plain text using simple syntax. 
+It was created by John Gruber in 2004 with the goal of providing a simple way to 
+write content for the web that is easy to read and write, while still being capable of 
+being converted into HTML.
+
+Markdown is designed to be human-readable even in its raw form, and it's often used to 
+write documentation, README files, blog posts, forum posts, and other types of content that need 
+to be formatted for the web. The syntax of Markdown is straightforward and intuitive, 
+making it accessible to both technical and non-technical users.
+
+Here are some key features of Markdown:
+
+1.  Headers: Markdown allows you to create headers of different levels using hash symbols (#).
+2.  Text Formatting: Markdown provides options for basic text formatting such as bold, italic, 
+    and strikethrough using asterisks (*) or underscores (_).
+3.  Lists: You can create ordered (numbered) and unordered (bullet) lists using numbers, hyphens, or asterisks.
+4.  Links: Markdown allows you to create hyperlinks by enclosing the link text in square 
+    brackets ([]) and the URL in parentheses (()).
+5.  Images: You can insert images using a similar syntax to links but with 
+    an exclamation mark (!) at the beginning.
+6.  Code Blocks: Code blocks can be created by indenting the text with four spaces or by 
+    using triple backticks (```) before and after the code block. Syntax highlighting for 
+    specific programming languages is also supported.
+7.  Tables: Markdown provides a simple way to create tables using pipes (|) and hyphens (-).
+8.  Blockquotes: You can create blockquotes by prefixing the text with a greater-than symbol (>).
+
+Markdown is widely supported and can be easily converted into HTML or 
+other formats using various tools and libraries. Many text editors, 
+content management systems (CMS), and online platforms have built-in 
+support for Markdown, making it a popular choice for writing and formatting web content.
+
+#JS documentation\
+
+JSDoc is a documentation generation tool and a syntax for adding documentation 
+comments to JavaScript code. It is used to describe the structure, types, and 
+purpose of functions, variables, and objects in JavaScript. 
+JSDoc comments use a specific format that allows automated documentation generators 
+to parse the comments and generate documentation in various formats, such as HTML, Markdown, or JSON.
+
+JSDoc comments begin with the /** syntax and end with */. 
+Within the comment block, you can use special tags to provide information about 
+the code element being documented. These tags include @param to describe function parameters, 
+@returns to describe the return value of a function, @typedef to define custom types, 
+@class to document classes, and many more.
+
+JSDoc comments are not only helpful for generating documentation, 
+but also for providing better understanding and context for other developers who read 
+and maintain the code. They serve as a form of self-documentation and can be especially 
+useful in larger codebases or when collaborating with others.
