@@ -1,4 +1,4 @@
-Course Content
+# Course Content
 
 1. PART 1: Structuring JavaScript
 2. Managing Complexity

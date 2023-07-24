@@ -125,22 +125,6 @@ function addNumbers(a, b) {
 const result = addNumbers(5, 10);
 console.log(result); // Output: 15
 
-// @ts-check
-
-/**
- * A simple function to add two numbers.
- * @param {number} a - The first number.
- * @param {number} b - The second number.
- * @returns {number} The sum of the two numbers.
- */
-function addNumbers(a, b) {
-    return a + b;
-  }
-  
-  // Test the function
-  const result = addNumbers(5, 10);
-  console.log(result); // Output: 15
-
 # Gherkin is a line-oriented language that uses indentation to define structure.Either spaces or tabs may be used for indentation. One line should be treated as one step and mostly it starts with a keyword . #
 
 # a line that starts with a hash sign (#) is treated as comment
