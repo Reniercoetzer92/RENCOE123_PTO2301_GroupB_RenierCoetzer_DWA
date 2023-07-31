@@ -1,0 +1,96 @@
+Abstraction:
+
+Low level:
+
+Variables
+Functions
+Loops
+if else Statements
+
+High Level:
+
+Managing Complexity
+Errors and Debugging 
+Coments
+Code Styles.
+
+Then Abstraction in the middle of High Level and Low Level:
+What is Abstraction:
+
+Abstraction is a fundamental concept in computer science and software engineering, 
+as well as in many other disciplines. It refers to the process of simplifying complex systems by hiding 
+unnecessary details while highlighting the essential features. 
+In essence, abstraction allows you to focus on what something does rather than how it does it.
+
+In programming, abstraction is often used to create models or representations of real-world 
+objects, systems, or processes. It enables developers to design and work with higher-level, 
+more intuitive concepts rather than dealing with the intricacies of low-level implementation.
+
+There are several levels of abstraction in computer science:
+
+Physical level: At the lowest level, you have the physical representation of data and operations in hardware.
+
+Machine level: Above the physical level is the machine level, which involves working with machine 
+    instructions and registers.
+
+Assembly level: One level higher, programmers work with assembly languages, 
+    which are a more human-readable representation of machine code.
+
+Procedural level: This level involves working with procedures, functions, and subroutines, 
+    where you can group related operations together.
+
+Object level: At the object-oriented level, you create classes and objects to represent real-world 
+    entities and their interactions.
+
+High-level languages: The highest level of abstraction is working with high-level programming languages 
+like Python, Java, or C++. These languages offer a wide range of built-in abstractions, 
+making it easier for developers to solve complex problems without worrying about low-level details.
+
+The main advantages of abstraction are:
+
+Simplicity: Abstraction simplifies the understanding and development of complex systems by providing 
+    a clear and concise representation of essential components.
+
+Modularity: By dividing a system into abstract components, it becomes easier to manage and modify 
+    each part independently without affecting the entire system.
+
+Reusability: Abstraction allows you to create reusable code components, such as functions, classes, 
+    and libraries, which can be used across different projects.
+
+Encapsulation: Abstraction encourages encapsulation, where the internal details of an abstraction 
+    are hidden from the outside, promoting a clear separation of concerns.
+
+Flexibility and Maintainability: Abstracting away the implementation details allows you to make 
+    changes or optimizations without affecting the external functionality, increasing the flexibility and maintainability of the codebase.
+
+Overall, abstraction is a powerful tool that helps in creating efficient, scalable, 
+and maintainable software systems by focusing on the essential aspects and hiding unnecessary complexity.
+
+you have a formula E=mc2, and the explenation of that fomula might very long if you dive deeper into it.
+
+Think of a computer:
+
+1 Word Explain what is a computer?
+
+but it is actually more: 
+
+it has components that make up a computer Like:
+
+a Hard drive
+a Motherboard
+a Ram
+a Cpu Porcessor 
+a Psu Power Suply
+
+just to think al these words: has there own sub components that make up the the components of a computer.
+
+This is called abstraction.
+
+One of my biggest regrets in life is that I failed to understand the significance of that lesson early on. 
+I learned the essence of software design far too late in life. I have interviewed hundreds of developers. 
+What I’ve learned from those sessions is that I’m not alone. 
+[…] If you’re a software developer, you compose functions and data structures every day, 
+whether you know it or not. You can do it consciously (and better), or you can do it accidentally, 
+with duct-tape and crazy glue. The process of software development is breaking down large problems 
+into smaller problems, building components that solve those smaller problems, then composing those 
+components together to form a complete application.
