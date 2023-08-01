@@ -1,5 +1,5 @@
 import { BOOKS_PER_PAGE, authors, genres, books } from './data.js'
-import { html } from './queryselectors.js'
+import { html } from './scripts.js'
 
 let page = 1;
 let matches = books;

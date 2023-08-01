@@ -5,7 +5,7 @@
 3. What is JavaScript? ✔
 4. Documentation ✔
 5. Code Style ✔
-6. Throwing Errors
+6. Throwing Errors ✔
 7. Abstraction
 8. Programming Paradigms
 9. Encapsulation
