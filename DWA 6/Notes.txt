@@ -1,20 +1,13 @@
 Abstraction:
 
-Low level:
+Low level:                      High Level:
 
-Variables
-Functions
-Loops
-if else Statements
+Variables                     Managing Complexity  
+Functions                     Errors and Debugging 
+Loops                         Comments
+if else Statements            Code Styles.
 
-High Level:
-
-Managing Complexity
-Errors and Debugging 
-Coments
-Code Styles.
-
-Then Abstraction in the middle of High Level and Low Level:
+Then Abstraction is in the middle of High Level and Low Level:
 What is Abstraction:
 
 Abstraction is a fundamental concept in computer science and software engineering, 
@@ -28,19 +21,19 @@ more intuitive concepts rather than dealing with the intricacies of low-level im
 
 There are several levels of abstraction in computer science:
 
-Physical level: At the lowest level, you have the physical representation of data and operations in hardware.
+    Physical level: At the lowest level, you have the physical representation of data and operations in hardware.
 
-Machine level: Above the physical level is the machine level, which involves working with machine 
-    instructions and registers.
+    Machine level: Above the physical level is the machine level, which involves working with machine 
+        instructions and registers.
 
-Assembly level: One level higher, programmers work with assembly languages, 
-    which are a more human-readable representation of machine code.
+    Assembly level: One level higher, programmers work with assembly languages, 
+        which are a more human-readable representation of machine code.
 
-Procedural level: This level involves working with procedures, functions, and subroutines, 
-    where you can group related operations together.
+    Procedural level: This level involves working with procedures, functions, and subroutines, 
+        where you can group related operations together.
 
-Object level: At the object-oriented level, you create classes and objects to represent real-world 
-    entities and their interactions.
+    Object level: At the object-oriented level, you create classes and objects to represent real-world 
+        entities and their interactions.
 
 High-level languages: The highest level of abstraction is working with high-level programming languages 
 like Python, Java, or C++. These languages offer a wide range of built-in abstractions, 
@@ -48,20 +41,20 @@ making it easier for developers to solve complex problems without worrying about
 
 The main advantages of abstraction are:
 
-Simplicity: Abstraction simplifies the understanding and development of complex systems by providing 
-    a clear and concise representation of essential components.
+    Simplicity: Abstraction simplifies the understanding and development of complex systems by providing 
+        a clear and concise representation of essential components.
 
-Modularity: By dividing a system into abstract components, it becomes easier to manage and modify 
-    each part independently without affecting the entire system.
+    Modularity: By dividing a system into abstract components, it becomes easier to manage and modify 
+        each part independently without affecting the entire system.
 
-Reusability: Abstraction allows you to create reusable code components, such as functions, classes, 
-    and libraries, which can be used across different projects.
+    Reusability: Abstraction allows you to create reusable code components, such as functions, classes, 
+        and libraries, which can be used across different projects.
 
-Encapsulation: Abstraction encourages encapsulation, where the internal details of an abstraction 
-    are hidden from the outside, promoting a clear separation of concerns.
+    Encapsulation: Abstraction encourages encapsulation, where the internal details of an abstraction 
+        are hidden from the outside, promoting a clear separation of concerns.
 
-Flexibility and Maintainability: Abstracting away the implementation details allows you to make 
-    changes or optimizations without affecting the external functionality, increasing the flexibility and maintainability of the codebase.
+    Flexibility and Maintainability: Abstracting away the implementation details allows you to make 
+        changes or optimizations without affecting the external functionality, increasing the flexibility and maintainability of the codebase.
 
 Overall, abstraction is a powerful tool that helps in creating efficient, scalable, 
 and maintainable software systems by focusing on the essential aspects and hiding unnecessary complexity.
@@ -88,9 +81,7 @@ This is called abstraction.
 
 One of my biggest regrets in life is that I failed to understand the significance of that lesson early on. 
 I learned the essence of software design far too late in life. I have interviewed hundreds of developers. 
-What I’ve learned from those sessions is that I’m not alone. 
-[…] If you’re a software developer, you compose functions and data structures every day, 
-whether you know it or not. You can do it consciously (and better), or you can do it accidentally, 
-with duct-tape and crazy glue. The process of software development is breaking down large problems 
-into smaller problems, building components that solve those smaller problems, then composing those 
-components together to form a complete application.
+What I’ve learned from those sessions is that I’m not alone. […] If you’re a software developer, you compose functions and data structures 
+every day, whether you know it or not. You can do it consciously (and better), or you can do it accidentally, 
+with duct-tape and crazy glue. The process of software development is breaking down large problems into smaller problems, 
+building components that solve those smaller problems, then composing those components together to form a complete application.
