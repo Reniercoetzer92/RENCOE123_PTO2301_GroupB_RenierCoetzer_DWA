@@ -13,7 +13,7 @@ Here are some key features of JavaScript:
 2.  Object-oriented: JavaScript supports object-oriented programming paradigms, 
     allowing the creation of objects with properties and methods to organize and structure code.
 
-3.  ersatility: JavaScript can be used for a wide range of applications, 
+3.  versatility: JavaScript can be used for a wide range of applications, 
     including web and mobile app development, game development, server-side programming, and even robotics.
 
 4.  Integration with HTML and CSS: JavaScript seamlessly integrates with HTML and CSS, 
