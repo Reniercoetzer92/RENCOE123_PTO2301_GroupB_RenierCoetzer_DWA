@@ -47,7 +47,7 @@ Here are some key features of Markdown:
 
 1.  Headers: Markdown allows you to create headers of different levels using hash symbols (#).
 2.  Text Formatting: Markdown provides options for basic text formatting such as bold, italic, 
-    and strikethrough using asterisks (*) or underscores (_).
+    and strike through using asterisks (*) or underscores (_).
 3.  Lists: You can create ordered (numbered) and unordered (bullet) lists using numbers, hyphens, or asterisks.
 4.  Links: Markdown allows you to create hyperlinks by enclosing the link text in square 
     brackets ([]) and the URL in parentheses (()).
@@ -57,7 +57,7 @@ Here are some key features of Markdown:
     using triple backticks (```) before and after the code block. Syntax highlighting for 
     specific programming languages is also supported.
 7.  Tables: Markdown provides a simple way to create tables using pipes (|) and hyphens (-).
-8.  Blockquotes: You can create blockquotes by prefixing the text with a greater-than symbol (>).
+8.  Block quotes: You can create block quotes by prefixing the text with a greater-than symbol (>).
 
 Markdown is widely supported and can be easily converted into HTML or 
 other formats using various tools and libraries. Many text editors, 
@@ -81,4 +81,4 @@ the code element being documented. These tags include @param to describe functio
 JSDoc comments are not only helpful for generating documentation, 
 but also for providing better understanding and context for other developers who read 
 and maintain the code. They serve as a form of self-documentation and can be especially 
-useful in larger codebases or when collaborating with others.
+useful in larger codebase or when collaborating with others.

@@ -59,7 +59,7 @@ The main advantages of abstraction are:
 Overall, abstraction is a powerful tool that helps in creating efficient, scalable, 
 and maintainable software systems by focusing on the essential aspects and hiding unnecessary complexity.
 
-you have a formula E=mc2, and the explenation of that fomula might very long if you dive deeper into it.
+you have a formula E=mc2, and the explanation of that formula might very long if you dive deeper into it.
 
 Think of a computer:
 
@@ -72,8 +72,8 @@ it has components that make up a computer Like:
 a Hard drive
 a Motherboard
 a Ram
-a Cpu Porcessor 
-a Psu Power Suply
+a Cpu Processor 
+a Psu Power Supply
 
 just to think al these words: has there own sub components that make up the the components of a computer.
 

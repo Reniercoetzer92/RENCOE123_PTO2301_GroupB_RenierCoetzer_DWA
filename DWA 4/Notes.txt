@@ -58,7 +58,7 @@ CodeStyles:
         Following consistent white space conventions and adhering to the coding style guide of a project 
         or team helps ensure readability and facilitates collaboration among developers.
         
-    Namining Conventions:
+    Naming Conventions:
         Naming conventions in programming refer to the set of rules and guidelines used to name variables, 
         functions, classes, and other code elements. Adhering to naming conventions helps create consistent, 
         readable, and maintainable code. 
@@ -152,7 +152,7 @@ Airbnb javascript Style Guidelines.
 What is ESLint?:
 
     ESLint is a popular open-source static code analysis tool used to identify and enforce 
-    coding patterns and best practices in JavaScript and TypeScript codebases. 
+    coding patterns and best practices in JavaScript and TypeScript codebase. 
     It helps developers maintain consistent code styles, identify potential issues, and adhere to 
     coding standards defined by a coding style guide. 
     ESLint is highly configurable and can be customized to suit the specific needs of a project or team.
