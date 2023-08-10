@@ -2,10 +2,11 @@ Abstraction:
 
 Low level:                      High Level:
 
-Variables                     Managing Complexity  
-Functions                     Errors and Debugging 
-Loops                         Comments
-if else Statements            Code Styles.
+Variables.                     Managing Complexity.  
+Functions.                     Errors and Debugging. 
+Loops.                         Comments.
+if else Statements.            Code Styles.
+                               Documentation.
 
 Then Abstraction is in the middle of High Level and Low Level:
 What is Abstraction:
@@ -16,8 +17,8 @@ unnecessary details while highlighting the essential features.
 In essence, abstraction allows you to focus on what something does rather than how it does it.
 
 In programming, abstraction is often used to create models or representations of real-world 
-objects, systems, or processes. It enables developers to design and work with higher-level, 
-more intuitive concepts rather than dealing with the intricacies of low-level implementation.
+objects, systems, or processes. It enables developers to design and work with higher-level concepts rather 
+than dealing with the low-level implementation.
 
 There are several levels of abstraction in computer science:
 
@@ -54,7 +55,8 @@ The main advantages of abstraction are:
         are hidden from the outside, promoting a clear separation of concerns.
 
     Flexibility and Maintainability: Abstracting away the implementation details allows you to make 
-        changes or optimizations without affecting the external functionality, increasing the flexibility and maintainability of the codebase.
+        changes or optimizations without affecting the external functionality, increasing the flexibility 
+        and maintainability of the codebase.
 
 Overall, abstraction is a powerful tool that helps in creating efficient, scalable, 
 and maintainable software systems by focusing on the essential aspects and hiding unnecessary complexity.
@@ -81,7 +83,8 @@ This is called abstraction.
 
 One of my biggest regrets in life is that I failed to understand the significance of that lesson early on. 
 I learned the essence of software design far too late in life. I have interviewed hundreds of developers. 
-What I’ve learned from those sessions is that I’m not alone. […] If you’re a software developer, you compose functions and data structures 
-every day, whether you know it or not. You can do it consciously (and better), or you can do it accidentally, 
-with duct-tape and crazy glue. The process of software development is breaking down large problems into smaller problems, 
-building components that solve those smaller problems, then composing those components together to form a complete application.
+What I’ve learned from those sessions is that I’m not alone. […] If you’re a software developer, you compose 
+functions and data structures every day, whether you know it or not. You can do it consciously (and better), or you 
+can do it accidentally, with duct-tape and crazy glue. The process of software development is breaking down large 
+problems into smaller problems, building components that solve those smaller problems, then composing those 
+components together to form a complete application.
