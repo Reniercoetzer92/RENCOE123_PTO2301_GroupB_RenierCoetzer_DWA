@@ -1,5 +1,5 @@
 /**
- * Abstracted from Html Document, all attributes.
+ * Abstracted all attributes from Html Document.
  */
 
 export const html = {

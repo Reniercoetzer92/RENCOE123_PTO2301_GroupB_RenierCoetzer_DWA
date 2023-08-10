@@ -2,6 +2,7 @@ Single Responsibility Principle: https://www.youtube.com/watch?v=UQqY3_6Epbg
 Open/Closed Principle Explained: https://www.youtube.com/watch?v=-ptMtJAdj40
 Liskov Substitution Principle Explained: https://www.youtube.com/watch?v=dJQMqNOC4Pc
 Interface Segregation Principle Explained: https://www.youtube.com/watch?v=JVWZR23B_iE
+Dependency Inversion Principle (DIP) Explained:https://www.youtube.com/watch?v=9oHY5TllWaU
 
 Let's do a quick overview of how to implement abstraction in JavaScript with SOLID, before diving into the first lecture, 
 'Creating Abstraction with SOLID'.
