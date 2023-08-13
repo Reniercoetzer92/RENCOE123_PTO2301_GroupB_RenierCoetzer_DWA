@@ -91,7 +91,7 @@ const createCounter = (label) => {
     decreased,
 
     get label() {
-      return innerLabel;
+      return innerLabel
     },
 
     set label(newLabel) {
