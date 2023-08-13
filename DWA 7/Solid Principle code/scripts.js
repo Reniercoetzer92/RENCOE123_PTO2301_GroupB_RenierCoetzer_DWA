@@ -1,13 +1,25 @@
-// @ts-check
+import { createTask } from './Modules/tasks';
 
-import { state, Task } from "./Modules/state";
-import { addTaskToHtml,  updateHtmlTask } from "./Modules/tasks.js";
+createTask({
+  title: "Wash the dog",
+  urgency: "high",
+  due: null,
+});
 
-window.addEventListener("error", () => {
-  document.body.innerHTML = "Something went very very wrong, Please Refresh!"
-})
+createTask({
+  title: "Wash the dog",
+  urgency: "high",
+  due: null,
+});
 
-addTaskToHtml
+createTask({
+  title: "Wash the dog",
+  urgency: "high",
+  due: null,
+});
 
-addTaskToHtml("test");
-updateHtmlTask("test", { title: "wash the dog", });
+createTask({
+  title: "Wash the dog",
+  urgency: "high",
+  due: null,
+});

@@ -1,0 +1,14 @@
+*   Object orientated programming
+    The second paradigm to be adopted was actually discovered two years earlier. in 1966, by ole Johan Dahl and Kristen Nygaard.
+    these two programmers noticed that the function call stack frame in the ALGOL language could be moved to a heap,
+    there by allowing local variables declared by a function to exist long after the function returned.
+    The function became a constructor for a class, the local variables became instance variables, and the nested
+    functions became methods. This led inevitably to the discovery of polymorphism through the disciplined use of function pointers.
+        We can Summarize the OOP paradigm as Follows:
+
+        "OOP imposes discipline on indirect transfer of control"
+
+*   Was main paradigm for long period of time.
+*   Different flavours of OOP.
+*   Class not the best name of Javascript.
+*   Encapsulation in OOP?

@@ -10,38 +10,38 @@
 
 // Example usage of the Tasks typedef
 const task1 = {
-  id: '1',
-  title: 'Buy groceries',
+  id: "1",
+  title: "Buy groceries",
   completed: false,
-  created: new Date('2023-07-19'),
-  due: new Date('2023-07-25'),
-  urgency: 'medium',
+  created: new Date("2023-07-19"),
+  due: new Date("2023-07-25"),
+  urgency: "medium",
 };
 
 const task2 = {
-  id: '2',
-  title: 'Pay bills',
+  id: "2",
+  title: "Pay bills",
   completed: false,
-  created: new Date('2023-07-19'),
+  created: new Date("2023-07-19"),
   due: null, // No due date set for this task
-  urgency: 'high',
+  urgency: "high",
 };
 
 // Function that takes a Tasks object as an argument
 function displayTask(task) {
   console.log(`Task: ${task.title}`);
-  console.log(`Status: ${task.completed ? 'Completed' : 'Incomplete'}`);
+  console.log(`Status: ${task.completed ? "Completed" : "Incomplete"}`);
   console.log(`Created: ${task.created.toDateString()}`);
   if (task.due !== null) {
     console.log(`Due: ${task.due.toDateString()}`);
   } else {
-    console.log('No due date set.');
+    console.log("No due date set.");
   }
   console.log(`Urgency: ${task.urgency}`);
 }
 
 // Output information about the tasks
-console.log('Task 1:');
+console.log("Task 1:");
 displayTask(task1);
-console.log('Task 2:');
+console.log("Task 2:");
 displayTask(task2);
