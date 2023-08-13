@@ -61,3 +61,5 @@ export const doesHtmlExist = (dataAttr, value) => {
   const isHtmlElement = element instanceof HTMLElement;
   return isHtmlElement;
 };
+
+export const createUniqueId = () => {}
