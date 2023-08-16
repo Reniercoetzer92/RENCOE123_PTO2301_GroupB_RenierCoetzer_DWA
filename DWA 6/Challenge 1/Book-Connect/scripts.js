@@ -1,5 +1,5 @@
-import { BOOKS_PER_PAGE, authors, genres, books } from './data.js'
-import { html } from './querySelectors.js'
+import { BOOKS_PER_PAGE, authors, genres, books } from "./data.js";
+import { html } from "./querySelectors.js";
 
 let page = 1;
 let matches = books;
@@ -14,16 +14,16 @@ let matches = books;
  * @returns 
  */
 const createPreview = (book) => {
-    //Function used by 'populateBookItems' to create preview element
-    const {author, image, title, id} = book;
+  //Function used by 'populateBookItems' to create preview element
+  const { author, image, title, id } = book;
 
-    let element = document.createElement("div");
-    element.classList.add("preview");
-    element.dataset.id = id;
+  let element = document.createElement("div");
+  element.classList.add("preview");
+  element.dataset.id = id;
 
-    element.onclick = showBookDescription;
+  element.onclick = showBookDescription;
 
-    element.innerHTML = /* html */ `
+  element.innerHTML = /* html */ `
     <div>
         <img class="preview__image" src="${image}"/>
     </div>
@@ -31,10 +31,9 @@ const createPreview = (book) => {
         <h2 class="preview__title">${title}</h2>
         <h3 class="preview__author">${authors[author]}</h3>
     </div>
-    `
-    return element;
+    `;
+  return element;
 };
-
 
 /**
  * The populateBookItems function takes a filtered array of books, a startindex, and an endindex. 
@@ -46,21 +45,20 @@ const createPreview = (book) => {
  * @param {string} endIndex 
  */
 export const populateBookItems = (filterBooks, startIndex, endIndex) => {
-    const fragment = document.createDocumentFragment()
-    const extracted = filterBooks.slice(startIndex, endIndex)
+  const fragment = document.createDocumentFragment();
+  const extracted = filterBooks.slice(startIndex, endIndex);
 
-    for(let book of extracted) {
-        const preview = createPreview({
-            author: book['author'],
-            id: book['id'],
-            image: book['image'],
-            title: book['title']
-        })
-        fragment.appendChild(preview);
-    }
-    html.list.items.appendChild(fragment)
+  for (let book of extracted) {
+    const preview = createPreview({
+      author: book["author"],
+      id: book["id"],
+      image: book["image"],
+      title: book["title"],
+    });
+    fragment.appendChild(preview);
+  }
+  html.list.items.appendChild(fragment);
 };
-
 
 /**
  * The updateShowMoreButton function calculates the number of remaining books based on the current page and the number 
@@ -71,22 +69,22 @@ export const populateBookItems = (filterBooks, startIndex, endIndex) => {
  * @param {string} filteredBooks 
  */
 export const updateShowMoreButton = (filteredBooks) => {
-    let booksRemaining = filteredBooks.length - (page * BOOKS_PER_PAGE);
+  let booksRemaining = filteredBooks.length - page * BOOKS_PER_PAGE;
 
-    if (booksRemaining > 0) {
-        html.list.button.innerHTML = /* html */ [
-            `<span class= show_more>Show more</span>`,
-            `<span class="list__remaining"> (${booksRemaining})</span>`,
-        ];
-        html.list.button.removeAttribute('disabled')
-    } else {
-        html.list.button.innerHTML = /* html */ [
-            `<span class= show_more>Show more</span>`,
-            `<span class="list__remaining"> (0)</span>`,
-        ];
-    
-        html.list.button.setAttribute('disabled', 'disabled')
-    }
+  if (booksRemaining > 0) {
+    html.list.button.innerHTML = /* html */ [
+      `<span class= show_more>Show more</span>`,
+      `<span class="list__remaining"> (${booksRemaining})</span>`,
+    ];
+    html.list.button.removeAttribute("disabled");
+  } else {
+    html.list.button.innerHTML = /* html */ [
+      `<span class= show_more>Show more</span>`,
+      `<span class="list__remaining"> (0)</span>`,
+    ];
+
+    html.list.button.setAttribute("disabled", "disabled");
+  }
 };
 
 /**
@@ -97,20 +95,20 @@ export const updateShowMoreButton = (filteredBooks) => {
     This function is used to populate a dropdown list of genres in a search feature.
  */
 export const populateDropdownSearchGenres = () => {
-    const fragment = document.createDocumentFragment()
-    let element = document.createElement('option')
-    element.value = 'any'
-    element.innerText = 'All Genres'
-    fragment.appendChild(element)
+  const fragment = document.createDocumentFragment();
+  let element = document.createElement("option");
+  element.value = "any";
+  element.innerText = "All Genres";
+  fragment.appendChild(element);
 
-    for (const [id, name] of Object.entries(genres)) {
-        const option = document.createElement('option')
-        option.value = id
-        option.innerText = name
-        fragment.appendChild(option)
-    }
+  for (const [id, name] of Object.entries(genres)) {
+    const option = document.createElement("option");
+    option.value = id;
+    option.innerText = name;
+    fragment.appendChild(option);
+  }
 
-    html.search.genres.appendChild(fragment)
+  html.search.genres.appendChild(fragment);
 };
 
 /**
@@ -121,20 +119,20 @@ export const populateDropdownSearchGenres = () => {
     This function is used to populate a dropdown list of authors in a search feature.
  */
 export const populateDropdownSearchAuthors = () => {
-    let fragment = document.createDocumentFragment()
-    let element = document.createElement('option')
-    element.value = 'any'
-    element.innerText = 'All Authors'
-    fragment.appendChild(element)
+  let fragment = document.createDocumentFragment();
+  let element = document.createElement("option");
+  element.value = "any";
+  element.innerText = "All Authors";
+  fragment.appendChild(element);
 
-    for (const [id, value] of Object.entries(authors)) {
-        const option = document.createElement('option')
-        option.value = id
-        option.innerText = value
-        fragment.appendChild(option)
-    }
+  for (const [id, value] of Object.entries(authors)) {
+    const option = document.createElement("option");
+    option.value = id;
+    option.innerText = value;
+    fragment.appendChild(option);
+  }
 
-    html.search.authors.appendChild(fragment)
+  html.search.authors.appendChild(fragment);
 };
 
 //EventHandler
@@ -148,19 +146,19 @@ export const populateDropdownSearchAuthors = () => {
  * @param {any} event 
  */
 const showBookDescription = (event) => {
-//this is a inline Event Listener added in 'createPreview'.
-    let bookID = event.currentTarget.getAttribute('data-id')
-    let book = books.find(b => b.id === bookID)
-    let publishYear = new Date(book.published).getFullYear()
-    let subtitle = `${authors[book.author]} (${publishYear})`
+  //this is a inline Event Listener added in 'createPreview'.
+  let bookID = event.currentTarget.getAttribute("data-id");
+  let book = books.find((b) => b.id === bookID);
+  let publishYear = new Date(book.published).getFullYear();
+  let subtitle = `${authors[book.author]} (${publishYear})`;
 
-    html.list.image.setAttribute('src', book.image)
-    html.list.title.innerHTML = book.title
-    html.list.subtitle.innerHTML = subtitle
-    html.list.description.innerHTML = book.description
-    
-   toggleListDialog(event)
-}
+  html.list.image.setAttribute("src", book.image);
+  html.list.title.innerHTML = book.title;
+  html.list.subtitle.innerHTML = subtitle;
+  html.list.description.innerHTML = book.description;
+
+  toggleListDialog(event);
+};
 
 /**
  * The toggleListDialog function toggles the presence of the open attribute on the html.list.overlay element. 
@@ -169,7 +167,7 @@ const showBookDescription = (event) => {
     absence of the open attribute.
  */
 export const toggleListDialog = () => {
-    html.list.overlay.toggleAttribute('open')
+  html.list.overlay.toggleAttribute("open");
 };
 
 /**
@@ -179,12 +177,12 @@ export const toggleListDialog = () => {
     specified range, and then calls the updateShowMoreButton function to update the UI elements related to showing more books.
  */
 export const showMoreBooks = () => {
-    let startIndex = BOOKS_PER_PAGE * page;
-    page = page + 1;
-    let endIndex = BOOKS_PER_PAGE * page;
+  let startIndex = BOOKS_PER_PAGE * page;
+  page = page + 1;
+  let endIndex = BOOKS_PER_PAGE * page;
 
-    populateBookItems(matches, startIndex, endIndex);
-    updateShowMoreButton(matches);
+  populateBookItems(matches, startIndex, endIndex);
+  updateShowMoreButton(matches);
 };
 
 /**
@@ -193,9 +191,9 @@ export const showMoreBooks = () => {
     possibly to ensure that the user's attention is directed to the search input when the dialog is opened.
  */
 export const toggleSearchDialog = () => {
-    html.search.overlay.toggleAttribute('open');
-    html.search.title.focus();
-}
+  html.search.overlay.toggleAttribute("open");
+  html.search.title.focus();
+};
 
 /**
  * The toggleSettingsDialog function toggles the presence of the open attribute on the html.settings.overlay element, 
@@ -203,8 +201,8 @@ export const toggleSearchDialog = () => {
     possibly to ensure that the user's attention is directed to a specific input or element when the dialog is opened.
  */
 export const toggleSettingsDialog = () => {
-    html.settings.overlay.toggleAttribute('open');
-}
+  html.settings.overlay.toggleAttribute("open");
+};
 
 /**
  * The handleSearchFormSubmit function handles the form submission event for a search form. 
@@ -215,40 +213,43 @@ export const toggleSettingsDialog = () => {
  * @param {any} event 
  */
 export const handleSearchFormSubmit = (event) => {
-    event.preventDefault()
-    const formData = new FormData(event.target)
-    const filters = Object.fromEntries(formData)
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const filters = Object.fromEntries(formData);
 
-    let filteredBooks = books;
+  let filteredBooks = books;
 
-    if (filters.title !== ''){
-        filteredBooks = filteredBooks.filter(b => b.title.toLowerCase().includes(filters.title.toLowerCase()))
-    };
-    
-    if (filters.genre !== 'any') {
-        filteredBooks = filteredBooks.filter(b => b.genres.includes(filters.genre))
-    };
-    
-    if (filters.author !== 'any') {
-        filteredBooks = filteredBooks.filter(b => b.author === filters.author)
-    };
-    
-    if (filteredBooks.length < 1 ){
-        html.list.message.classList.add('list__message_show')
-    }
-    else {
-        html.list.message.classList.remove('list__message_show')
-    }
-    
-    page = 1;
-    matches = filteredBooks;
-    html.list.items.innerHTML = '';
-    populateBookItems(filteredBooks, 0, BOOKS_PER_PAGE);
-    updateShowMoreButton(filteredBooks);
+  if (filters.title !== "") {
+    filteredBooks = filteredBooks.filter((b) =>
+      b.title.toLowerCase().includes(filters.title.toLowerCase())
+    );
+  }
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    html.search.overlay.toggleAttribute('open');
-}
+  if (filters.genre !== "any") {
+    filteredBooks = filteredBooks.filter((b) =>
+      b.genres.includes(filters.genre)
+    );
+  }
+
+  if (filters.author !== "any") {
+    filteredBooks = filteredBooks.filter((b) => b.author === filters.author);
+  }
+
+  if (filteredBooks.length < 1) {
+    html.list.message.classList.add("list__message_show");
+  } else {
+    html.list.message.classList.remove("list__message_show");
+  }
+
+  page = 1;
+  matches = filteredBooks;
+  html.list.items.innerHTML = "";
+  populateBookItems(filteredBooks, 0, BOOKS_PER_PAGE);
+  updateShowMoreButton(filteredBooks);
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  html.search.overlay.toggleAttribute("open");
+};
 
 /**
  * The handleSettingFormSubmit function handles the form submission event for a settings form. It extracts the form data, 
@@ -258,27 +259,33 @@ export const handleSearchFormSubmit = (event) => {
  * @param {any} event 
  */
 export const handleSettingFormSubmit = (event) => {
-    event.preventDefault()
-    const formData = new FormData(event.target)
-    const result = Object.fromEntries(formData)
-    
-    const day = {
-        dark: '10, 10, 20',
-        light: '255, 255, 255',
-    }
-    
-    const night = {
-        dark: '255, 255, 255',
-        light: '10, 10, 20',
-    };
-    
-    const css = {
-        day: day,
-        night: night
-    }
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const result = Object.fromEntries(formData);
 
-    document.documentElement.style.setProperty('--color-light', css[result.theme].light);
-    document.documentElement.style.setProperty('--color-dark', css[result.theme].dark);
-   
-    html.settings.overlay.close()
-}
+  const day = {
+    dark: "10, 10, 20",
+    light: "255, 255, 255",
+  };
+
+  const night = {
+    dark: "255, 255, 255",
+    light: "10, 10, 20",
+  };
+
+  const css = {
+    day: day,
+    night: night,
+  };
+
+  document.documentElement.style.setProperty(
+    "--color-light",
+    css[result.theme].light
+  );
+  document.documentElement.style.setProperty(
+    "--color-dark",
+    css[result.theme].dark
+  );
+
+  html.settings.overlay.close();
+};
