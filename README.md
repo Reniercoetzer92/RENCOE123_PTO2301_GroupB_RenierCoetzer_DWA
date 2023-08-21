@@ -8,8 +8,8 @@
 6. Throwing Errors ✔
 7. Abstraction ✔
 8. Programming Paradigms ✔
-9. Encapsulation
-10. Inheritance
+9. Encapsulation ✔
+10. Inheritance ✔
 11. Polymorphism
 12. Functional Programming (FP)
 13. Declarative Abstractions
