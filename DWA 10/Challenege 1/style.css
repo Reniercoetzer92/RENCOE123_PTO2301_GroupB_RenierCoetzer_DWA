@@ -109,16 +109,6 @@ body {
     background-color: var(--color-medium-grey);
 }
 
-.counter__reset {
-    color: white;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size:smaller;
-    border-radius: 5px;
-    cursor: pointer;
-    size: 1rem;
-    font-size: 2rem;
-    background-color: var(--color-medium-grey);
-}
 #confirmationMessage {
     font-size: x-large;
     color: var(--color-red-dark);
