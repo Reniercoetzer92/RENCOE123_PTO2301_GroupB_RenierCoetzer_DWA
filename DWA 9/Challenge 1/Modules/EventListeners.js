@@ -1,11 +1,10 @@
 import {
-  toggleListDialog,
-  showMoreBooks,
   toggleSearchDialog,
   toggleSettingsDialog,
   handleSearchFormSubmit,
   handleSettingFormSubmit,
-} from "./scripts.js";
+} from "../scripts.js";
+import { toggleListDialog, showMoreBooks } from "../scripts.js";
 import { html } from "./querySelectors.js";
 
 /**

@@ -1,0 +1,33 @@
+Polymorphism
+
+Poly - Many.
+Morph - Shape.
+ism - Nature of something.
+
+"having multiple Forms"
+
+Picture with 2 faces, but its also a cup.
+
+What is Polymorphism?
+
+Polymorphism is a concept in object-oriented programming (OOP) that allows objects of different classes to be 
+treated as objects of a common superclass. It enables different classes to share a common Interface or base class, 
+while still allowing each class to have its own specific implementations.
+
+There are two main types of polymorphism: 
+1. compile-time (also known as static) polymorphism
+2. runtime (also known as dynamic) polymorphism.
+
+* Compile-time Polymorphism: This is achieved through method overloading or operator overloading. 
+  Method overloading involves defining multiple methods in a class with the same name but different parameter lists. 
+  The correct method to be invoked is determined at compile-time based on the arguments provided. 
+  Operator overloading involves defining how operators should behave when used with objects of a class.
+
+* Runtime Polymorphism: This is achieved through method overriding. Method overriding occurs when a subclass 
+  provides a specific implementation for a method that is already defined in its superclass. 
+  The method to be executed is determined at runtime based on the actual type of the object that calls the method. 
+  This is often accomplished through the use of virtual functions in languages like C++ or the @Override annotation 
+  in languages like Java.
+
+Polymorphism is a fundamental principle in OOP, allowing for more flexible and modular code by enabling the 
+interchangeability of different classes through a common interface or base class.

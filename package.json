@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "eslint-config-prettier": "^9.0.0"
+  },
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.8.0"
   }
 }

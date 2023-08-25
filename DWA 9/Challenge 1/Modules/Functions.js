@@ -1,15 +1,14 @@
-import { BOOKS_PER_PAGE, books } from "./data.js";
+import { BOOKS_PER_PAGE, books } from "../Modules/data.js";
 import {
-  updateShowMoreButton,
   populateBookItems,
+  updateShowMoreButton,
   populateDropdownSearchGenres,
   populateDropdownSearchAuthors,
-} from "./scripts.js";
+} from "../scripts.js";
 
 /**
  * Functions.
  */
-
 populateBookItems(books, 0, BOOKS_PER_PAGE);
 populateDropdownSearchGenres();
 populateDropdownSearchAuthors();

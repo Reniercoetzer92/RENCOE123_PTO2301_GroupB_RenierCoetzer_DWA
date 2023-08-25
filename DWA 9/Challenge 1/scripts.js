@@ -1,5 +1,5 @@
-import { BOOKS_PER_PAGE, authors, genres, books } from "./data.js";
-import { html } from "./querySelectors.js";
+import { BOOKS_PER_PAGE, authors, genres, books } from "./Modules/data.js";
+import { html } from "./Modules/querySelectors.js";
 
 let page = 1;
 let matches = books;
