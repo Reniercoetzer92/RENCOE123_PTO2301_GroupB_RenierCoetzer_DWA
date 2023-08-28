@@ -1,0 +1,78 @@
+Functional Programming
+
+*   Structured Programming 
+    The first Paradigm to be adopted (but not the first to be invented) was structured programming, which was discovered
+    by Edsger wybe Dijkstra in 1968. dijkstra showed that the use of unrestrained jumps (goto statement) is harmful 
+    to program structure. As we'll see in the chapter that follow, he replaced those jumps with the more familiar 
+    if/then/else and do/while/until constructs.
+        We can Summarize the SP paradigm as Follows:
+
+        "SP imposes discipline on direct transfer of control"
+
+*   Object orientated programming
+    The second paradigm to be adopted was actually discovered two years earlier. in 1966, by ole johan Dahl and Kriten Nygaard.
+    these two programmers noticed that the function call stack frame in the ALGOL language could be moved to a heap,
+    there by allowing local variables declared by a function to exist long after the function returned.
+    The function became a constructor for a class, the local variables became instance variables, and the nested
+    functions became methods. This led inevitably to the discovery of polymorphism through the disciplined use of function pointers.
+        We can Summarize the OOP paradigm as Follows:
+
+        "OOP imposes discipline on indirect transfer of control"
+
+*   Functional Programming 
+    the third paradigm, which has only recently begun to be adopted, was the first to be invented. Indeed, its 
+    invention predates computer programming itself. Functional programming is the direct result of the work of alonzoz Church,
+    who in 1936 invented a-Calculus while pursuing the same mathematical problem that was motivating Alan Turning
+    at the same time. His a - Calculus is the foundation of the LISP language, invented in 1958 by john MCarthy.
+    A foundational notion of A-Calculus is immutability --that is, the notion that the values of symbols do not change.
+    This effectively means that a functional language has no assignment statement. Most functional languages do, in fact,
+    have some means to alter the value of a variable, but only under very strict discipline.
+        We can Summarize the FP paradigm as Follows:
+        
+        "FP imposes discipline upon  assignment"
+
+What is Functional Programming?
+
+Functional programming is a programming paradigm that treats computation as the evaluation of mathematical 
+functions and avoids changing state and mutable data. It focuses on the use of pure functions, which are 
+functions that always produce the same output for a given input and have no side effects. 
+In functional programming, functions are first-class citizens, meaning they can be passed around as 
+arguments to other functions, returned as values from other functions, and assigned to variables.
+
+Key concepts in functional programming include:
+
+* Pure Functions: These functions have no side effects, meaning they don't modify external state or 
+  variables and only depend on their input arguments to produce an output. This property makes them 
+  predictable and easier to reason about.
+
+* Immutability: Functional programming encourages the use of immutable data structures, 
+  where once a data structure is created, it cannot be changed. Instead of modifying data, new data 
+  structures are created with the desired changes.
+
+* First-Class and Higher-Order Functions: Functions can be passed as arguments to other functions and 
+  returned as values. Functions that operate on other functions are known as higher-order functions.
+
+* Function Composition: This involves combining multiple functions to create new functions. 
+  This is achieved by using the output of one function as the input of another, leading to a chain of 
+  transformations.
+
+* Recursion: Recursion is often favored over traditional iterative loops in functional programming. 
+  It's a technique where a function calls itself to solve a problem by breaking it down into smaller 
+  instances of the same problem.
+
+* Referential Transparency: Expressions and functions can be replaced with their values without 
+  changing the program's behavior. This property simplifies reasoning about code and facilitates optimization.
+
+* Lazy Evaluation: Some functional programming languages use lazy evaluation, where expressions are 
+  only evaluated when their results are actually needed. This can lead to more efficient and responsive 
+  programs.
+
+Functional programming languages include Haskell, Lisp, Scheme, F#, Erlang, and more. 
+Additionally, many mainstream programming languages like Python, JavaScript, and Java have 
+incorporated functional programming features into their syntax and libraries, allowing developers 
+to use functional programming concepts alongside imperative or object-oriented code.
+
+Functional programming can lead to code that's easier to test, maintain, and reason about. 
+It can also help with concurrency and parallelism since pure functions don't rely on shared state. 
+However, mastering functional programming might require a shift in mindset for programmers accustomed 
+to imperative or object-oriented paradigms.
