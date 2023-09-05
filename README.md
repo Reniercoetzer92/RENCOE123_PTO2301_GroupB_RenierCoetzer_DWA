@@ -10,9 +10,9 @@
 8. Programming Paradigms ✔
 9. Encapsulation ✔
 10. Inheritance ✔
-11. Polymorphism
-12. Functional Programming (FP)
-13. Declarative Abstractions
-14. Higher Order Functions
+11. Polymorphism ✔
+12. Functional Programming (FP)  ✔
+13. Declarative Abstractions ✔
+14. Higher Order Functions  ✔
 15. State Machines
 16. PART 2: JavaScript Frameworks
