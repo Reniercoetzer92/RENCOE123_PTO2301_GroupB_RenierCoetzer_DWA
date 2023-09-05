@@ -8,22 +8,32 @@ const products = [
 ];
 
 console.log(
-  // Console log each product name
+  /**
+   * Console log each product name
+   */
   products.forEach(product => console.log(product.product)),
   
-  // Filter out products with names longer than 5 characters
+  /**
+   * Filter out products with names longer than 5 characters
+   */
   products.filter(product => product.product.length <= 5),
 
-  // Convert string prices to numbers, remove products with no prices, and calculate the combined price
+  /**
+   * Convert string prices to numbers, remove products with no prices, and calculate the combined price
+   */
   products
     .filter(product => product.price !== '' && !isNaN(Number(product.price)))
     .map(product => ({ ...product, price: Number(product.price) }))
     .reduce((totalPrice, product) => totalPrice + product.price, 0),
 
-  // Concatenate all product names
+  /**
+   * Concatenate all product names
+   */
   products.map(product => product.product).reduce((acc, curr) => acc + ', ' + curr),
 
-  // Calculate highest and lowest-priced items
+  /**
+   * Calculate highest and lowest-priced items
+   */
   products.reduce((result, product) => {
     const price = Number(product.price);
     if (!isNaN(price)) {
@@ -37,7 +47,9 @@ console.log(
     return result;
   }, { highest: null, lowest: null }),
 
-  // Recreate the object with modified keys
+  /**
+   * Recreate the object with modified keys
+   */
   products.reduce((result, product) => {
     result.push({ name: product.product, cost: product.price });
     return result;
