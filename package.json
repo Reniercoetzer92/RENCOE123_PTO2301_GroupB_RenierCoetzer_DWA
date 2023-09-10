@@ -1,10 +1,10 @@
 {
-  "type": "module",   
-
+  "type": "module",
   "devDependencies": {
     "eslint-config-prettier": "^9.0.0"
   },
   "dependencies": {
-    "@shoelace-style/shoelace": "^2.8.0"
+    "@shoelace-style/shoelace": "^2.8.0",
+    "lit": "^2.8.0"
   }
 }
